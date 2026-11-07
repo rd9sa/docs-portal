@@ -1,0 +1,56 @@
+site_name: Портал разработки 1С
+site_description: Техническое описание проекта, инструкции и FAQ
+theme:
+  name: material
+  language: ru
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+nav:
+  - Главная: index.md
+  - Проект:
+      - Обзор: project/index.md
+      - Паспорт проекта: project/passport.md
+      - Архитектура: project/architecture.md
+      - Окружения: project/environments.md
+      - Глоссарий: project/glossary.md
+      - Подсистемы: project/subsystems/index.md
+  - Модель данных:
+      - Обзор: data-model/index.md
+      - Объекты: data-model/objects.md
+      - Связи: data-model/relations.md
+      - Соглашения: data-model/conventions.md
+  - Интеграции:
+      - Обзор: integrations/index.md
+      - SQL (ADO): integrations/sql-ado.md
+      - ГИС-Карта: integrations/gis-map.md
+      - HTTPS-сервисы: integrations/https-services.md
+  - Механизмы:
+      - Список механизмов: mechanisms/index.md
+  - Стандарты:
+      - Обзор: standards/index.md
+      - Код-стайл: standards/code-style.md
+      - Ревью: standards/review.md
+      - Git workflow: standards/git-workflow.md
+  - Онбординг:
+      - Оформление: onboarding/index.md
+      - Настройка окружения: onboarding/setup.md
+      - Первая задача: onboarding/first-task.md
+      - FAQ новичка: onboarding/faq-newbie.md
+  - Поддержка:
+      - Обзор: support/index.md
+      - Ошибки: support/errors.md
+      - Инструкции: support/user-guides/index.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - tables
+  - toc:
+      permalink: true

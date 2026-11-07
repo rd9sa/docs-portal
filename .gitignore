@@ -1,0 +1,12 @@
+# Сборка MkDocs
+site/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Системный мусор
+.DS_Store
+Thumbs.db
